@@ -1,0 +1,70 @@
+
+.tab_panel{
+    font-family: 'Poppins', sans-serif !important; }
+.Services_wrapper{
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif; }
+.Services_wrapper .Services_title h1{
+    font-weight: 700;
+    font-size: 64px; }
+.Services_wrapper .Services_title p{
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 100px;
+    color: #000; } 
+.card{
+    padding: 32px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    min-height: 291px;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-bottom: 30px; }
+
+.card_header h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-bottom: 22px;
+    color: #000000; }
+.card_body p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px; }
+.list_item .list_group_item{
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: .3s;
+    padding-left: 20px;
+    line-height: 30px; }
+.list_group_item:hover{
+    border-left: 4px solid #00D747; }
+.list_group_item a{
+    color: #000 !important;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 26px;
+}
+.tab label{
+    text-transform: lowercase !important; }
+.tabLabel{
+    text-transform: capitalize !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+@media screen and (max-width: 360px) {
+    .card_body p{
+        font-size: 12px;
+    }
+    .list_group_item a{
+        font-size: 12px;
+    }
+    .card_header h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,11 @@
+.ListItem{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 80px; }
+.ListTop{
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold; }
+.ListItem li{
+    line-height: 33px;
+    color: #777;
+    list-style-type: square; }

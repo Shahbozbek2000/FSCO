@@ -1,0 +1,71 @@
+.development_wrapper{
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+    width: 100%; }
+.development_wrapper h1{
+    font-weight: bold;
+}
+.development_wrapper .card{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    min-height: 280px;
+    border-radius: 10px;
+    padding: 40px 0px 40px 40px;
+    background: linear-gradient(#E87527, #E7463F); }
+.development_wrapper .card .card_info h4{
+    padding-top: 30px;
+    line-height: 26px;
+    font-weight: lighter;
+    width: 100%;
+    font-size: 18px; }
+.learn_more button{
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+.learn_more a{
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 40px; }
+.learn_more button:hover{
+    background-color: #fff; }
+.learn_more button a:hover{
+    color: #000 !important;
+    font-weight: bold;
+}
+@media screen and (max-width: 360px){
+    .development_wrapper .card h4{
+        font-size: 17px;
+    }
+    .card_left, .card_right{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 576px){
+    .development_wrapper .card{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .card_left, .card_right{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .development_wrapper .card{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 992px){
+    .development_wrapper .card{
+        margin-bottom: 20px;
+    }
+}

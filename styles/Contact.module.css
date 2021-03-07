@@ -1,0 +1,43 @@
+.contact_wrapper{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 50px 0;
+    height: auto; }
+.textField {
+    width: 48%; }
+.textField_1{
+    width: 100%; }
+.btn_group button {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff !important;
+    transition: all .3s;
+    border: none;
+    outline: none;
+    background-color: #00D747; }
+.btn_group button:hover {
+    background-color: #4D70A4;
+}
+.form_wrapper h2{
+    font-weight: 600; }
+ .textField label, .textField_1 label{
+     font-weight: 500;
+     color: #000;
+    font-family: 'Poppins', sans-serif !important; }
+.right_image img{
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+}
+@media only screen and (max-width: 992px){
+    .textField{
+        margin-left: 0px !important;
+        margin-top: 20px !important;
+        width: 100% !important; }
+}
+@media only screen and (max-width: 360px) {
+    .btn_group button{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,13 @@
+.business_services{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;}
+.business_title{
+    text-align: center; }
+.business_title h2{
+    font-weight: 700;
+    padding-bottom: 30px;
+    line-height: 40px; }
+.business_title p{
+    font-size: 14px;
+    width: 80%;
+    margin: auto; }

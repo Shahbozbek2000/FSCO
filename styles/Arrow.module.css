@@ -1,0 +1,31 @@
+.Count_Up{
+    position: fixed;
+    background-color:#00D747;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 12px;
+    left: 91%; }
+.Count_Up img{
+    font-weight: bold;
+    width:20px;
+    animation: scrollTop 0.5s alternate ease infinite; }
+@keyframes scrollTop {
+    from {
+        transform: translateY(4px);
+    }
+    to {
+        transform: translateY(-2px);
+    }
+}
+
+@media screen and (max-width: 360px){
+    .Count_Up{
+        margin-left: -20px;
+    }
+}

@@ -1,0 +1,15 @@
+.title_wrapper{
+  margin: 0;
+  padding: 0; }
+.title_wrapper .title_info h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0;
+    line-height: 50px; }
+@media screen and (max-width: 992px){
+    .title_wrapper .title_info h3 {
+      font-size: 18px;
+      line-height: 30px;  
+    }
+}

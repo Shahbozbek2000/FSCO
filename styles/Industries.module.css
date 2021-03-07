@@ -1,0 +1,84 @@
+.Industries_wrapper{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: auto; }
+.Industries_wrapper .Industries_Left {
+    width: 40%; }
+.Industries_wrapper .Industries_Right{
+    width: 60%; }
+.Industries_wrapper .Industries_Left img{
+    width: 80%;
+    height: 70vh;
+    object-fit: cover; }
+
+.Industries_Right h6{
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(0,0,10,0.45);
+    text-transform: uppercase;
+    border-bottom: 3px solid #2ADC65;
+    width: 14%;
+    z-index: 1; }
+.Industries_info h2{
+    font-size: 40px;
+    font-weight: 600; } 
+.Industries_Right_Description p{
+    font-size: 20px;
+    margin: 35px 0 20px 0;
+    color: rgba(0,0,10,0.45);
+    display: inline-block; }
+.service_icons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    overflow: hidden;
+    padding-right: 20px; }
+ .service_icons img{
+     width: 60px;
+     cursor: pointer;
+     padding-right: 10px;
+    overflow: hidden;
+    transition: all .5s; }
+
+
+.service_icons .service_panel a{
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+    font-weight: bold; }
+.service_icons .service_panel p{
+    margin-top: 10px;
+}
+.service_icons .service_panel a:hover{
+    color: #2ADC65;
+}
+@media screen and (max-width: 992px) {
+    .Industries_wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+        .Industries_title h6{
+            text-align: center;
+        }
+    .Industries_Left img{
+        display: none;
+    }
+     .Industries_Right{
+        width: 100% !important;
+    }
+    .Industries_Right h6{
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .Industries_info h2{
+        font-size: 26px;
+    }
+}

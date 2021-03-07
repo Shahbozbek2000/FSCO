@@ -1,0 +1,50 @@
+.section_wrapper{
+    font-family: 'Poppins', sans-serif;
+}
+.section_wrapper_title h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter; }
+.section_wrapper_title p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px; }
+.business_problem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px; }
+.business_problem .business_problem_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 121px;
+    transition: all 1s ease;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.4); }
+.business_problem_icon img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px; }
+.business_problem_icon:hover{
+    background-color: #00D747 !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: 0px 0px 10px  #00D747;
+    cursor: pointer; }
+.business_problem_title h6{
+    padding-top: 20px;
+    color: rgba(37,47,62,0.5);
+    font-size: 18px !important; }
+.business_problem_info h5 a{
+    display: inline-block;
+    color: #2d2d43 !important;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+    transition: .5s;
+    text-decoration: none !important; }
+.business_problem_info h5 a:hover{
+    color: #00D747 !important; }   

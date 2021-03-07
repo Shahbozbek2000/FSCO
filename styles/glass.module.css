@@ -1,0 +1,27 @@
+.styledImg{
+    width: 120px;
+    position: relative;
+    height: 120px;
+    object-fit: cover;
+    left: 25%;
+    text-align: center !important;
+    border: 2px solid #000;
+    border-radius: 50%; }
+.glassCard_title{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.15; }
+.glassCard_info{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px; }
+.glassCard_wrapper{
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 3em;
+    background: #C7D2FE66;
+    backdrop-filter: blur(10px);
+}

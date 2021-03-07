@@ -1,0 +1,19 @@
+.problems_wrapper{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px; }
+.problems_wrapper .paragraph{
+    text-align: center;
+    line-height: 35px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 40px; }
+.problems_wrapper .info{
+    font-size: 14px;
+    line-height: 25px; }
+
+@media only screen and (max-width: 360px){
+   .paragraph{
+       font-size: 30px !important;
+       line-height: 40px !important;
+   }
+}
