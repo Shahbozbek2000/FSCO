@@ -1,10 +1,12 @@
-import dynamicStyles from "../styles/Dynamic.module.css";
+import dynamicStyles from "../styles/Dynamic.module.css"
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
 export function Dynamic() {
   return (
     <div className={dynamicStyles.content_wrapper}>
       <div className={dynamicStyles.content_wrapper_Left}>
         <div className={dynamicStyles.content_wrapper_image}>
-          <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzJ8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="marketing" />
+          <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="marketing" />
         </div>
       </div>
       <div className={dynamicStyles.content_wrapper_Right}>
@@ -19,7 +21,8 @@ export function Dynamic() {
            <button type='button' className={dynamicStyles.button}>
            <span>Learn More</span><br/>
            More about us
-           <i className='fa fa-long-arrow-right'></i></button>
+           <ArrowForwardIcon className={dynamicStyles.arrow_right} style={{marginLeft:'20px', fontSize:'25px'}} />
+           </button>
          </div>
       </div>
     </div>

@@ -6,16 +6,17 @@
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-position:center;
+    margin-top: -80px;
     background-repeat: no-repeat;
     background-attachment: fixed; }
 .mobidev_info{
     z-index: 5; }
 .mobidev_text{
     position: absolute;
-    top: 30%;
+    top: 45%;
     color: #fff;
     z-index: 5;
-    left: 55%; }
+    left: 10%; }
 .wrap{
     position: absolute;
     width: 100%;
@@ -46,6 +47,9 @@
     font-weight: bold; }
 
 @media screen and (max-width: 992px) {
+    .mobidev_wrapper{
+        margin-top: 0;
+    }
     .mobidev_info{
         display: flex;
         justify-content: center;
@@ -63,6 +67,10 @@
 }
 
 @media screen and (max-width: 360px){
+    .mobidev_wrapper{
+        margin-top: 0;
+       
+    }
     .mobidev_text{
         top: 40%;
     }
@@ -70,4 +78,5 @@
         font-size: 30px;
         text-transform: capitalize;
     }
+   
 }

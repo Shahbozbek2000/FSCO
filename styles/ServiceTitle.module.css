@@ -10,4 +10,12 @@
 .business_title p{
     font-size: 14px;
     width: 80%;
+    line-height: 25px;
     margin: auto; }
+@media screen and (max-width: 992px){
+    .business_title p{
+        width: 100%;
+        text-justify: justify !important;
+        text-justify: inter-word !important;
+    }
+}

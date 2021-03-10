@@ -39,7 +39,7 @@ export function Industries() {
     <Fade left cascade>
       <div className={industriesStyles.Industries_Left}>
         <img
-          src="https://media.istockphoto.com/photos/professional-web-design-and-website-development-service-picture-id1150242042?k=6&m=1150242042&s=612x612&w=0&h=zHc4GqEZAzNHwB2Ki-WWD6HXyaIW-rJYKeHU_K-5NC0="
+          src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
           alt="service-left"
         />
       </div>

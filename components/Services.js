@@ -69,8 +69,8 @@ export default function Services() {
           </div>
           </Fade>
           
-          <TabPanel value={value} index={0} className='tab_panel'>
-            <div className="row">
+          <TabPanel value={value} index={0} className={servicesStyles.tab_panel}>
+            <div className="row  d-sm-flex flex-sm-column-rewerse">
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
@@ -93,6 +93,8 @@ export default function Services() {
                   variant="scrollable"
                   value={value}
                   onChange={handleChange}
+                  className={servicesStyles.wrap_reverse}
+                  indicatorColor='primary'
                   aria-label="Vertical tabs example"
                   
                 >
@@ -110,8 +112,8 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={1} className='tab_panel'>
-            <div className="row">
+          <TabPanel value={value} index={1} className={servicesStyles.tab_panel}>
+            <div className="row  d-sm-flex flex-sm-column-rewerse">
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
@@ -134,6 +136,8 @@ export default function Services() {
                   variant="scrollable"
                   value={value}
                   onChange={handleChange}
+                  className={servicesStyles.wrap_reverse}
+                  indicatorColor='primary'
                   aria-label="Vertical tabs example"
                   
                 >
@@ -146,8 +150,8 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={2} className='tab_panel'>
-            <div className="row">
+          <TabPanel value={value} index={2} className={servicesStyles.tab_panel}>
+            <div className="row  d-sm-flex flex-sm-column-rewerse">
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
@@ -170,6 +174,8 @@ export default function Services() {
                   orientation="vertical"
                   variant="scrollable"
                   value={value}
+                  indicatorColor='primary'
+                  className={servicesStyles.wrap_reverse}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
                   
@@ -186,8 +192,8 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={3} className='tab_panel'>
-            <div className="row">
+          <TabPanel value={value} index={3} className={servicesStyles.tab_panel}>
+            <div className="row  d-sm-flex flex-sm-column-rewerse">
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
@@ -209,6 +215,8 @@ export default function Services() {
                   orientation="vertical"
                   variant="scrollable"
                   value={value}
+                  indicatorColor='primary'
+                  className={servicesStyles.wrap_reverse}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
                   
@@ -227,8 +235,9 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={4} className='tab_panel'>
-            <div className="row">
+          <TabPanel value={value} index={4} className={servicesStyles.tab_panel}>
+            <div className="row d-sm-flex flex-sm-column-rewerse">
+           
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
@@ -250,6 +259,8 @@ export default function Services() {
                   orientation="vertical"
                   variant="scrollable"
                   value={value}
+                  indicatorColor='primary'
+                  className={servicesStyles.wrap_reverse}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
                   
@@ -266,7 +277,8 @@ export default function Services() {
                   className={servicesStyles.tabLabel} />
                 </Tabs>
               </div>
-            </div>
+              </div>
+         
           </TabPanel>
        
         </div>

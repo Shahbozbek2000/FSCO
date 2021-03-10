@@ -9,15 +9,16 @@
     font-family: 'Poppins', sans-serif !important;
     padding-top: 100px;
     width: 100vw; }
-.PrivateTabIndicator-colorSecondary-4{
-    background-color: blue !important; }
+
 .appLabel{
     font-family: 'Poppins', sans-serif !important;
     font-weight: bold !important; }
+
 .Right_courses_name p{
-    font-size: 18px !important;
+    font-size: 16px !important;
     line-height: 25px;
 }
+
 .Left_image img{
     width: 90%; }
 .h1{
@@ -26,24 +27,45 @@
 .Right_Content{
     font-family: 'Poppins', sans-serif; }
 .Right_title{
+    font-size: 16px;
     font-weight: bold; }
 .Right_description p{
     padding-top: 30px;
-    padding-right: 30px;
     line-height: 25px;
-    font-size: 18px !important;
-    width: 90% !important; }
+    font-size: 16px !important;
+    width: 100% !important; }
 .Right_content_price p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 30px;
 
 }
 @media screen and (max-width: 360px) {
     .h1{
-        font-size: 30px !important;
+        font-size: 25px !important;
         padding-left: 0 !important;
         text-align: center;
         font-weight: bold;
     }    
+}
+@media screen and (max-width: 768px){
+    .Right_description p{
+        width: 100%;
+        font-size: 13px  !important;
+    }
+    .Right_content_price p{
+        font-size: 13px !important;
+    }
+    .Right_courses_name p{
+        font-size: 13px !important;
+    }
+    .right_span{
+        margin-left: 40px !important;
+    }
+    .h1{
+        font-size: 25px !important;
+        padding-left: 0 !important;
+        text-align: center;
+        font-weight: bold;
+    }  
 }

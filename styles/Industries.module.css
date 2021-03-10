@@ -11,7 +11,7 @@
 .Industries_wrapper .Industries_Right{
     width: 60%; }
 .Industries_wrapper .Industries_Left img{
-    width: 80%;
+    width: 90%;
     height: 70vh;
     object-fit: cover; }
 
@@ -80,5 +80,17 @@
 @media screen and (max-width: 360px){
     .Industries_info h2{
         font-size: 26px;
+    }
+}
+@media screen and (max-width: 576px){
+    .Industries_info h2{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .Industries_Right_Description p{
+          font-size: 16px;
+    }
+    .service_icons p{
+        font-size: 14px;
     }
 }

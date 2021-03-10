@@ -69,6 +69,9 @@ constructor(props){
  handleSubmit = (e) => {
    e.preventDefault()
  }
+ handleChange = (e) => {
+   this.setState({[e.target.name]: e.target.value})
+ }
 
   render() {
     const {fullName, email, phoneNumber, country, 
@@ -85,6 +88,7 @@ constructor(props){
                     <TextField
                       required
                       noValidate
+                      name='fullName'
                       value={fullName}
                       onChange={this.handleChange}
                       id="standard-required"
@@ -94,6 +98,7 @@ constructor(props){
                     <TextField
                       required
                       id="standard-required"
+                      name='email'
                       label="Email"
                       required
                       value={email}
@@ -107,6 +112,7 @@ constructor(props){
                       id="standard-required"
                       label="Phone number"
                       required
+                      name='phoneNumber'
                       value={phoneNumber}
                       noValidate
                       onChange={this.handleChange}
@@ -118,6 +124,7 @@ constructor(props){
                       id="standard-required"
                       label="Country"
                       required
+                      name='country'
                       value={country}
                       noValidate
                       onChange={this.handleChange}
@@ -130,6 +137,7 @@ constructor(props){
                       label="Company"
                       required
                       noValidate
+                      name='company'
                       value={company}
                       onChange={this.handleChange}
                       className={contactStyles.textField_1}
@@ -141,6 +149,7 @@ constructor(props){
                       label="Message"
                       required
                       noValidate
+                      name='message'
                       value={message}
                       onChange={this.handleChange}
                       className={contactStyles.textField_1}
@@ -170,8 +179,8 @@ constructor(props){
             
             <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
             <div className={contactStyles.right_image}>
-             <img src='https://eleks.com/wp-content/uploads/contact-us-head-image.jpg' 
-             alt='contact-img' />
+             <img src='https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+             alt='contact-img' className='img-fluid' />
              </div>
             </div>
             

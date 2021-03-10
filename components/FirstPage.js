@@ -5,6 +5,7 @@ import { Industries } from "../components/Industries";
 import { Contact } from "../components/Contact";
 import Footer from "../components/Footer";
 import { BackgroundVideo } from "./BackgroundVideo";
+import { OurServices } from "./OurServices";
 
 export function FirstPage() {
   return (
@@ -13,7 +14,7 @@ export function FirstPage() {
       <ClientsLogo />
       <Services />
       <Projects />
-      <Industries />
+      <OurServices/>
       <Contact />
       
     </div>

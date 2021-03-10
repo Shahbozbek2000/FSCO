@@ -9,3 +9,9 @@
     line-height: 33px;
     color: #777;
     list-style-type: square; }
+@media screen and (max-width: 360px){
+    .ListItem li{
+        font-size: 13px;
+        line-height: 25px;
+    }
+}

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {useWindowScroll} from 'react-use'
 import arrowStyles from '../styles/Arrow.module.css'
+import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 
 export  function ArrowUp() {
     const {y: pageYOffset} = useWindowScroll()
@@ -22,8 +23,7 @@ export  function ArrowUp() {
 
     return (
         <div className={arrowStyles.Count_Up} onClick={scrollUp}>
-            <img src='/images/up-arrow.svg'
-            alt='count-up' />
+          <ExpandLessIcon className={arrowStyles.arrow_top} />    
         </div>
     )
 }

@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import projectStyles from "../styles/Project.module.css";
 import { Button } from "@material-ui/core"
@@ -48,8 +47,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontFamily:'Poppins',
     width:'100%',
-    
-   
   },
 }));
 
@@ -77,7 +74,10 @@ export default function Projects() {
         <Tabs
           value={value}
           onChange={handleChange}
+          
+          className={projectStyles.tabs_color}
           aria-label="simple tabs example"
+          indicatorColor='primary'
         >
         
           <Tab label="T24.uz" {...a11yProps(0)} className={projectStyles.appLabel} />
@@ -104,8 +104,13 @@ export default function Projects() {
                   <img src='/images/T-24.png' alt='logo' />
                </div>
                <div className={projectStyles.Right_title}>
-                 <span>Uzbekistan</span>
-                 <span style={{marginLeft:'100px'}}>Medium Business</span>
+                 <span>
+                 <img src='/images/map.svg' alt='location'
+                 style={{width:'20px'}} />
+                 Uzbekistan</span>
+                 <span style={{marginLeft:'100px'}} className={projectStyles.right_span}>
+                 <img src='/images/medium_business.jpg'
+                 style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
                </div>
               <div className={projectStyles.Right_description}>
                 <p>With FSCo we reached trust of our
@@ -140,8 +145,12 @@ export default function Projects() {
                <img src='/images/TT_ELD.png' alt='logo' />
             </div>
             <div className={projectStyles.Right_title}>
-              <span>USA</span>
-              <span style={{marginLeft:'100px'}}>Medium Business</span>
+            <span><img src='/images/map.svg' alt='location'
+                 style={{width:'20px'}} />
+              USA</span>
+              <span style={{marginLeft:'100px'}}>
+              <img src='/images/medium_business.jpg'
+              style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
             </div>
            <div className={projectStyles.Right_description}>
              <p>FSCo helped us to build user firendly and high <br/> performance
@@ -176,8 +185,12 @@ export default function Projects() {
                <img src='/images/Freight.png' alt='logo' />
             </div>
             <div className={projectStyles.Right_title}>
-              <span>USA</span>
-              <span style={{marginLeft:'100px'}}>Medium Business</span>
+              <span>
+              <img src='/images/map.svg' alt='location'
+                 style={{width:'20px'}} />USA</span>
+              <span style={{marginLeft:'100px'}}>
+              <img src='/images/medium_business.jpg'
+              style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
             </div>
            <div className={projectStyles.Right_description}>
              <p>With FSCo we reached trust of our

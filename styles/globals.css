@@ -28,7 +28,7 @@ a {
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: transparent;
+      background: #00D747;
       
     }
 

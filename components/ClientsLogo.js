@@ -6,7 +6,7 @@ const images = [
     {id:1, image: '/images/T24.png', title:'T24'},
     {id: 2, image:'/images/TTELD.png', title: 'TTELD'},
     {id: 3, image: '/images/TTfreigt.png', title:'TTfreight'},
-    {id: 4, image: '/images/ORDERTRUCK.png', title:'ORDERTRUCK'}
+    {id: 4, image: 'http://ordertruck.uz/assets/img/logo.svg', title:'ORDERTRUCK'}
 ]
 
 export  function ClientsLogo() {
