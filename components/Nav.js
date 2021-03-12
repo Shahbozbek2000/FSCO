@@ -1,24 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import { Fade as Hamburger } from "hamburger-react";
 import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
+
 export const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+ 
+
   const closeMobileMenu = () => setClick(false);
+
+ 
   return (
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
           <Link href="/">
             <a>
-              <img
-                src="/images/logo.svg"
-                alt="logo"
-                style={{ width: "120px" }}
-              />
+              
+              <img src='/images/logo.png' alt='logo'
+              style={{width:'120px', zIndex:'1001'}}  />
             </a>
           </Link>
         </div>
@@ -40,8 +43,10 @@ export const Navbar = () => {
             <Link href="/services">
               <a className="nav-link">Services</a>
             </Link>
+            <Submenu/>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="option" onClick={closeMobileMenu}
+           >
             <Link href="/">
               <a href="/" className="nav-link">
                 Case Studies
@@ -68,10 +73,9 @@ export const Navbar = () => {
           </Link>
         </li>
         <li style={{listStyle:'none'}} className='display'>
-          <FontAwesomeIcon icon={faSearch} className='font-search' style={{fontSize:'25px', color:'#fff',
-          position:'absolute', width: '25px', fontWeight:'lighter',
+          <FontAwesomeIcon icon={faSearch} className='font-search' style={{fontSize:'25px',
+          position:'absolute', width: '25px', fontWeight:'lighter', color:'#fff',
           top:'28px', right:'14%', cursor:'pointer'}} />
-        
         </li>
         
       </div>
@@ -85,15 +89,34 @@ export const Navbar = () => {
           .header {
             display: flex;
             justify-content: space-between;
+            position:relative;
             align-items: center;
-            z-index: 999 !important;
+            z-index: 1000 !important;
             padding: 30px 30px;
             font-family: "Poppins", sans-serif;
+            transition: all .7s ease-in-out;
             height: 80px;
           }
-          header:hover {
-            z-index: 1001 !important;
-            background: #fff !important;
+          .logo-1{
+            position: absolute;
+            z-index: 1000 !important;
+          }
+          .logo-2{
+            
+          }
+          .header:hover {
+           z-index: 1000 !important;
+            background: #fff !important; }
+          .header:hover .nav-link{
+            color: #000;
+            font-weight: bold; }
+          .header:hover .contact-btn{
+            color: #fff;
+            background: #000; }
+         
+          .header:hover .font-search{
+            color: #000 !important;
+            background:#000 !important;
           }
           .logo-nav {
             display: flex;
@@ -117,6 +140,7 @@ export const Navbar = () => {
           }
           .font-search{
             display:block;
+            color: #fff;
           }
           .contact-btn {
             border: none;
@@ -138,7 +162,7 @@ export const Navbar = () => {
           .option :hover {
             color: white;
           }
-
+          
           .signup-btn {
             padding: 10px 10px;
             height: 2.4rem;
@@ -163,7 +187,9 @@ export const Navbar = () => {
             color: #00d747 !important;
             border-top: 3px solid #00d747;
           }
-        
+          .nav-link:hover .nav__submenu{
+            display:block !important;
+          }
           @media screen and (max-width: 992px) {
             .header {
               padding: 0px 10px;
@@ -172,8 +198,9 @@ export const Navbar = () => {
               width: 45px;
               height: 45px;
             }
-            .logo-container img{
-              background-image: url('/images/logo.svg');
+            .logo-container {
+              background-image: url('/images/logo.svg') !important;
+              width: 120px;
             }
             .display{
               display:none !important;
@@ -195,6 +222,7 @@ export const Navbar = () => {
             .nav-link {
               color: black !important;
             }
+
             .nav-options.active {
               background: #fff;
               left: 0;
@@ -256,9 +284,69 @@ export const Navbar = () => {
               display: none !important;
             }
           }
+
+          
           
         `}
       </style>
     </div>
   );
 };
+
+class Submenu extends Component {
+  render() {
+    return (
+      <ul className="nav__submenu">
+        <li className="nav__submenu_item ">
+        <Link href='/services'>
+          <a>Mobile development</a>
+        </Link>
+        </li>
+        <li className="nav__submenu_item ">
+        <Link href='/services/web_development'>
+          <a>Web Development</a>
+        </Link>
+        </li>
+        <li className="nav__submenu_item ">
+        <Link href='/services/ux-ui-design'>
+          <a>UX/UI design</a>
+        </Link>
+        </li>
+        <style jsx>
+          {
+            `
+            .nav__submenu{
+              position: absolute;
+              opacity: 0;
+              top: 80px;
+              padding: 10px;
+              display:block;
+              background:#fff;
+              transition: all .5s;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px; }
+            .nav__submenu:hover{
+              opacity: 1;
+            }
+            .nav__submenu_item{
+              list-style: none;
+              transition: all .5s;
+            }
+            
+            .nav__submenu_item a {
+              color: #000;
+              font-size:14px;
+              font-weight: bold;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            .nav__submenu_item a:hover{
+            color: #00D747;
+            }
+            `
+          }
+        </style>
+      </ul>
+    )
+  }
+}

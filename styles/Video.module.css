@@ -66,6 +66,11 @@
    }
    
 }
+@media only screen and (max-width: 576px) {
+   .video_wrapper_title h1{
+      font-size: 20px;
+   }
+}
 @media only screen and (max-width: 360px) {
    .video_wrapper_title{
       display: flex;
@@ -76,13 +81,13 @@
    .video_wrapper_title h1{
      text-justify: distribute-all-lines !important;
       line-height: 35px !important;
-      font-size: 26px !important; }
+      font-size: 20px !important; }
    .video_wrapper_Image img{
       width: 100% !important;
       height: 80vh !important;
       object-fit: cover; }
    .video_wrapper_button button {
-      margin-top: 40px !important;
+      margin-top: 20px !important;
       font-size: 14px !important;
       padding: 10px 25px !important;
    }

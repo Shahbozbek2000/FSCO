@@ -38,6 +38,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none !important;
     transition: all .5s;
+    font-weight: 700;
     font-size: 13px !important;
     color: #2d2d43 !important; }
 .footer a:hover{

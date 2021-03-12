@@ -1,0 +1,98 @@
+.courses_wrapper{
+    padding-top: 120px;
+    width: 100%; }
+.courses_wrapper_content{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    width: 100%; }
+.courses_wrapper_left{
+    width: 45%;
+}
+.courses_wrapper_right{
+    padding-left: 40px;
+    width: 55%;
+}
+.courses_wrapper_left h4{
+    font-weight: bold !important;
+    color: #023575;
+    font-size: 40px; }
+.courses_wrapper_left p{
+     padding-top: 20px;
+     color: #758495;
+     font-weight: 500;
+     text-align: justify;
+     text-justify: inter-word; }
+.courses_list{
+    margin-bottom: 20px;
+    height: 200px;
+    padding-right: 20px;
+    width: 50%;
+    float: left; }
+.courses_name h3{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #023575; }
+.courses_info p{
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #758495;
+    padding-right: 10px;
+    text-justify: inter-word; }
+.courses_btn button{
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    transition: all .4s ease-out;
+    background-color: #023575; }
+.courses_btn button:hover{
+    background-color: #EF323A;
+}
+.courses_btn img{
+    filter:  brightness(0) invert(1);
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .courses_wrapper_content{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .courses_wrapper_left{
+        width: 100% !important;
+    }
+    .courses_wrapper_right{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .courses_wrapper_left h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .courses_wrapper_right .courses_list {
+        width: 100%;
+        
+    }
+    .courses_wrapper_left p{
+        font-size: 14px;
+    }
+    .courses_btn button{
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .courses_wrapper_right{
+        padding-left: 0;
+    }
+}
