@@ -1,6 +1,9 @@
-import titleStyles from "../styles/Title.module.css";
+import titleStyles from "../styles/Title.module.css"
+import Fade from 'react-reveal/Fade'
+
 export function Title() {
   return (
+    <Fade left cascade>
     <div className={titleStyles.title_wrapper}>
       <div className="container">
         <div className={titleStyles.title_info}>
@@ -11,5 +14,6 @@ export function Title() {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }

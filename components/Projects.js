@@ -106,11 +106,11 @@ export default function Projects() {
                <div className={projectStyles.Right_title}>
                  <span>
                  <img src='/images/map.svg' alt='location'
-                 style={{width:'20px'}} />
+                 style={{width:'20px', marginTop:'-8px'}} className={projectStyles.location}  />
                  Uzbekistan</span>
                  <span style={{marginLeft:'100px'}} className={projectStyles.right_span}>
                  <img src='/images/medium_business.jpg'
-                 style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
+                 style={{width:'15px', marginRight:'5px', marginTop:'-9px'}} />Medium Business</span>
                </div>
               <div className={projectStyles.Right_description}>
                 <p>With FSCo we reached trust of our
@@ -146,11 +146,11 @@ export default function Projects() {
             </div>
             <div className={projectStyles.Right_title}>
             <span><img src='/images/map.svg' alt='location'
-                 style={{width:'20px'}} />
+                 style={{width:'20px', marginTop:'-8px'}} className={projectStyles.location}  />
               USA</span>
               <span style={{marginLeft:'100px'}}>
               <img src='/images/medium_business.jpg'
-              style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
+              style={{width:'15px', marginRight:'5px', marginTop:'-9px'}} />Medium Business</span>
             </div>
            <div className={projectStyles.Right_description}>
              <p>FSCo helped us to build user firendly and high <br/> performance
@@ -187,10 +187,11 @@ export default function Projects() {
             <div className={projectStyles.Right_title}>
               <span>
               <img src='/images/map.svg' alt='location'
-                 style={{width:'20px'}} />USA</span>
+                 style={{width:'20px', marginTop:'-8px'}} 
+                 className={projectStyles.location} />USA</span>
               <span style={{marginLeft:'100px'}}>
               <img src='/images/medium_business.jpg'
-              style={{width:'15px', marginRight:'5px', marginTop:'-5px'}} />Medium Business</span>
+              style={{width:'15px', marginRight:'5px', marginTop:'-9px'}} />Medium Business</span>
             </div>
            <div className={projectStyles.Right_description}>
              <p>With FSCo we reached trust of our

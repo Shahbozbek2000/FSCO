@@ -15,9 +15,6 @@
      height: 100vh;
      z-index: 4;
      background: rgba(0, 0, 0, 0.4); }
- 
-  
- 
  .slider_wrapper .slider_wrapper_Image{
     width: 100%;
     height: 100vh;
@@ -34,11 +31,11 @@
     color: #fff; }
  .slider_wrapper_button button{
     position: absolute;
-    top: 62%;
+    top: 60%;
     left: 10%;
-    font-size: 20px !important;
+    font-size: 16px !important;
     display: inline-block;
-    padding: 15px 35px;
+    padding: 15px 30px;
     border: none;
     outline: none;
     transition: all .5s;
@@ -77,7 +74,7 @@
     }
     .slider_wrapper_title h1{
       text-justify: distribute-all-lines !important;
-       line-height: 35px !important;
+       line-height: 30px !important;
        font-size: 26px !important; }
     .slider_wrapper_Image img{
        width: 100% !important;
@@ -89,7 +86,15 @@
        padding: 10px 25px !important;
     }
  }
- 
+ @media screen and (max-width: 768px) {
+   .slider_wrapper_button button{
+      font-size: 14px !important;
+      padding: 7px 15px; }
+   .slider_wrapper_title h1{
+      font-size: 20px;
+   }
+ }
+/*  
  @media screen and (max-width: 375px){
       .slider_wrapper_title h1{
          font-size: 20px;
@@ -107,8 +112,8 @@
        font-size: 14px !important;
        margin-top: -40px;
     }
- }
- @media only screen and (min-width: 320px){
+ } */
+ /* @media only screen and (min-width: 320px){
     .slider_wrapper_title h1{
        font-size: 20px  }
     .slider_wrapper_button button{
@@ -125,4 +130,5 @@
     .slider_wrapper_button button{
        top: 70%;
     }
- }
+ } */
+ 

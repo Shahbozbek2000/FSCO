@@ -35,9 +35,9 @@
    position: absolute;
    top: 72%;
    left: 10%;
-   font-size: 25px;
+   font-size: 17px;
    display: inline-block;
-   padding: 15px 35px;
+   padding: 10px 25px;
    border: none;
    outline: none;
    transition: all .7s ease;
@@ -67,11 +67,13 @@
    
 }
 @media only screen and (max-width: 576px) {
-   .video_wrapper_title h1{
-      font-size: 20px;
+   .video_wrapper{
+      background-image: url('https://images.unsplash.com/photo-1455894127589-22f75500213a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1579&q=80');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position:center;
    }
-}
-@media only screen and (max-width: 360px) {
+   
    .video_wrapper_title{
       display: flex;
       justify-content: center;
@@ -87,60 +89,16 @@
       height: 80vh !important;
       object-fit: cover; }
    .video_wrapper_button button {
-      margin-top: 20px !important;
+      
       font-size: 14px !important;
       padding: 10px 25px !important;
    }
 }
+/* @media only screen and (max-width: 360px) {
+  
+} */
 
-@media screen and (max-width: 375px){
-     .video_wrapper_title h1{
-        font-size: 20px;
-     }
-     .video_wrapper_button button{
-        font-size: 14px !important;
-        margin-top: -40px;
-     }
-}
 
-@media screen and (max-width: 411px){
-   .video_wrapper_title h1{
-      font-size: 30px  }
-   .video_wrapper_button button{
-      font-size: 14px !important;
-      margin-top: -40px;
-   }
-}
-@media only screen and (min-width: 320px){
-   .video_wrapper_title h1{
-      font-size: 20px  }
-   .video_wrapper_button button{
-      font-size: 14px !important;
-      margin-top: -20px;
-   }
-}
-@media screen and (max-width: 280px) {
-   .video_wrapper_title h1{
-      font-size: 20px !important;
-   }
-}
 
-@media screen and (max-width: 377px){
-      .video_wrapper_title h1{
-         font-size: 18px;
-         line-height: 20px;
-      }
-}
-
-@media only screen and (max-width: 576px){
-   .video_wrapper{
-      background-image: url('https://images.unsplash.com/photo-1455894127589-22f75500213a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1579&q=80');
-      background-attachment: fixed;
-      background-size: cover;
-      background-position:center;
-   }
-}
-
-/* clients logo */
 
 

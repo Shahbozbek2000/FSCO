@@ -1,4 +1,6 @@
-import processStyles from "../../styles/Process.module.css";
+import processStyles from "../../styles/Process.module.css"
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 const processes = [
   {
@@ -38,10 +40,13 @@ const processes = [
 export function Process() {
   return (
     <div className={processStyles.process_wrapper}>
+    <Fade left cascade>
       <div className="container">
+      
         <h2>
           OUR DEVELOPMENT <span style={{ color: "#EF323A" }}>PROCESS</span>
         </h2>
+      
         <hr/>
         <p className={processStyles.process_top_info}>
           We deliver highest level of customer service by deploying innovative
@@ -51,6 +56,7 @@ export function Process() {
         </p>
         <div className="row">
           {processes.map((process, index) => (
+            <Zoom>
             <div className="col-lg-3 col-sm-6 col-md-4 col-12" key={index}>
               <div className={processStyles.process_content}>
                 <div className={processStyles.process_image}>
@@ -65,9 +71,11 @@ export function Process() {
                 </div>
               </div>
             </div>
+            </Zoom>
           ))}
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

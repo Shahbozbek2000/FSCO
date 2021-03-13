@@ -1,9 +1,12 @@
 import companyInfoStyles from '../../styles/CompanyInfo.module.css'
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 export  function CompanyInfo() {
     return (
         <div className={companyInfoStyles.companyInfo_wrapper}>
             <div className='container'>
+             <Fade left cascade>
                <div className={companyInfoStyles.company_title}>
                   <h2 style={{display:'block'}} className={companyInfoStyles.company_h2}>OUR COMMITMENT & <span style={{color:'#EF323A'}}>GUARANTEE</span> </h2>
                   <hr/>
@@ -12,8 +15,9 @@ export  function CompanyInfo() {
                    of technology, consulting and maximize your online business investment.
                   </p>
                </div>
+               </Fade>
                <div className={companyInfoStyles.companyInfo_content }>
-
+                 <Zoom>
                   <div className={companyInfoStyles.companyInfo_panel}>
                     <div className={companyInfoStyles.panel_image}>
                       <img src='https://www.xicom.biz/images/icons/guarantee/transparency.png'
@@ -28,7 +32,8 @@ export  function CompanyInfo() {
                        production cycle. </p>
                     </div>
                   </div>
-
+                  </Zoom>
+                  <Zoom>
                   <div className={companyInfoStyles.companyInfo_panel}>
                   <div className={companyInfoStyles.panel_image}>
                       <img src='https://www.xicom.biz/images/icons/guarantee/ontime-delivery.png'
@@ -43,7 +48,8 @@ export  function CompanyInfo() {
                        of our operations.  </p>
                     </div>
                   </div>
-
+                  </Zoom>
+                  <Zoom>
                   <div className={companyInfoStyles.companyInfo_panel}>
                   <div className={companyInfoStyles.panel_image}>
                       <img src='https://www.xicom.biz/images/icons/guarantee/free-support.png'
@@ -58,7 +64,8 @@ export  function CompanyInfo() {
                       even after the software / mobile app has been launched.  </p>
                     </div>
                   </div>
-
+                  </Zoom>
+                  <Zoom>
                   <div className={companyInfoStyles.companyInfo_panel}>
                   <div className={companyInfoStyles.panel_image}>
                       <img src='https://www.xicom.biz/images/icons/guarantee/flexible.png'
@@ -72,7 +79,8 @@ export  function CompanyInfo() {
                        the exact requirements of clients with diverse business needs.  </p>
                     </div>
                   </div>
-
+                  </Zoom>
+                  <Zoom>
                   <div className={companyInfoStyles.companyInfo_panel} style={{borderRight:'none'}}>
                   <div className={companyInfoStyles.panel_image}>
                       <img src='https://www.xicom.biz/images/icons/guarantee/24-hours.png'
@@ -86,6 +94,7 @@ export  function CompanyInfo() {
                       appropriate team of experts to ensure smooth execution of your project. </p>
                     </div>
                   </div>
+                  </Zoom>
                </div>
             </div>   
         </div>

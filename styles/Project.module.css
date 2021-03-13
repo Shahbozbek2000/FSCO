@@ -37,9 +37,26 @@
 .Right_content_price p {
     font-size: 16px;
     font-weight: bold;
-    line-height: 30px;
-
+    line-height: 30px; }
+.Right_title .location{
+    animation-name: sakrash;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transition: all .5s ease-out;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
+
+@keyframes sakrash {
+    0%{
+        transform: translateY(0px);
+       
+    }
+    100%{
+        transform: translateY(-10px);
+        
+    }
+}
+
 @media screen and (max-width: 360px) {
     .h1{
         font-size: 25px !important;

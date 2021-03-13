@@ -66,17 +66,32 @@
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 576px){
     .mobidev_wrapper{
-        margin-top: 0;
-       
-    }
+        margin-top: 0; }
     .mobidev_text{
         top: 40%;
     }
     .mobidev_text h1{
-        font-size: 30px;
+        font-size: 22px;
+        line-height: 1.4;
+        font-weight: lighter;
+        padding-left: 20px;
+        text-align: left;
         text-transform: capitalize;
+    }
+    .mobidev_text p{
+        font-size: 16px;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-weight: lighter;
+    }
+    .contactUs{
+        padding: 5px 10px !important;
+        font-size: 14px;
+        position: absolute;
+        left: 5%;
     }
    
 }

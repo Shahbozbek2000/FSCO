@@ -17,13 +17,14 @@ export  function Header() {
                 loop={Infinity}
                 wrapper="b"
                 steps={["WEBSITE DEVELOPMENT", 3000]}
+               
               />
                 </h1>
                 <p>
                    <Typical
                    loop={Infinity}
                    wrapper="b"
-                   steps={["Xicom offers robust and scalable web application development services across various platforms and industry verticals. We provide complete end-to-end website development services for mission-critical web applications demanding superior performance", 3500]}
+                   steps={["Xicom offers robust and scalable web application development services across various platforms and industry verticals. We provide complete end-to-end website development services for mission-critical web applications demanding superior performance", 3000]}
                  />
                  </p>
                 </div>

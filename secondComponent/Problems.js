@@ -1,4 +1,6 @@
 import problemsStyles from "../styles/Problems.module.css";
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 const massiv = [
   {
@@ -30,14 +32,17 @@ export function Problems() {
   return (
     <div className={problemsStyles.problems_wrapper}>
       <div className="container">
+      <Fade left cascade>
         <h3 className={problemsStyles.paragraph}>
           Problems We'll Help You Solve
         </h3>
+      </Fade>
         <div className="row mt-3">
           {massiv.map((information, index) => (
+            <Zoom key={index}>
             <div
               className="col-lg-4 col-sm-12 col-md-4 col-xs-12 col-12"
-              key={index}
+              
             >
               <div className={problemsStyles.content}>
                 <div className={problemsStyles.content_title}>
@@ -55,6 +60,7 @@ export function Problems() {
                 </div>
               </div>
             </div>
+            </Zoom>
           ))}
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import ourServiceStyles from "../styles/OurService.module.css";
+import Zoom from 'react-reveal/Zoom'
 
 const ourService = [
   {
@@ -41,7 +42,8 @@ export function OurServices() {
         <div className="row">
           {
               ourService.map((xizmatlar, index) => (
-                <div className="col-lg-6 col-sm-12 col-md-6 col-12" key={index}>
+                <Zoom key={index}>
+                <div className="col-lg-6 col-sm-12 col-md-6 col-12">
                    <div className={ourServiceStyles.ourService_content}>
                       <div className={ourServiceStyles.ourService_top}>
                          <h4 className={ourServiceStyles.ourService_name}>{xizmatlar.name}</h4>
@@ -55,6 +57,7 @@ export function OurServices() {
                       </div>
                    </div>
                 </div>
+                </Zoom>
               ))
           }
         </div>

@@ -1,5 +1,6 @@
 import developmentStyles from "../styles/Development.module.css";
 import Link from 'next/link'
+import Zoom from 'react-reveal/Zoom'
 
 const developments = [
   {
@@ -20,14 +21,16 @@ const developments = [
 
 export function DevelopmentSuccess() {
   return (
+    <Zoom>
     <div className={developmentStyles.development_wrapper}>
       <div className="container">
       <h1 className='text-center my-5'>PoC Development Success</h1>
         <div className="row">
           {developments.map((development, index) => (
+           
             <div
-              className="col-lg-6 col-sm-12 col-xs-12 col-md-12 col-12"
-              key={index}
+              className="col-lg-6 col-sm-12 col-xs-12 col-md-12 col-12" key={index}
+              
             >
               <div className={developmentStyles.card}>
                 <div className={developmentStyles.card_left} style={{width:'50%'}}>
@@ -53,9 +56,11 @@ export function DevelopmentSuccess() {
                 </div>
               </div>
             </div>
+            
           ))}
         </div>
       </div>
     </div>
+    </Zoom>
   );
 }

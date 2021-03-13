@@ -1,11 +1,13 @@
 import webCategoryStyles from "../../styles/WebCategory.module.css";
-
+import Zoom from 'react-reveal/Zoom'
 export function WebCategory() {
   return (
+    
     <div className={webCategoryStyles.webCategory_wrapper}>
       <div className="container">
         <div className={webCategoryStyles.webCategory_content}>
           <div className={webCategoryStyles.webCategory_top}>
+          <Zoom>
             <div
               className={webCategoryStyles.webCategory_panel}
               style={{ background: "#002958" }}
@@ -21,6 +23,8 @@ export function WebCategory() {
                 <p>development</p>
               </div>
             </div>
+            </Zoom>
+            <Zoom>
             <div
               className={webCategoryStyles.webCategory_panel}
               style={{ background: "#e9edf3" }}
@@ -38,6 +42,8 @@ export function WebCategory() {
                 <p>development</p>
               </div>
             </div>
+            </Zoom>
+            <Zoom>
             <div
               className={webCategoryStyles.webCategory_panel}
               style={{ background: "#002958" }}
@@ -53,10 +59,12 @@ export function WebCategory() {
                 <p>web applications</p>
               </div>
             </div>
+            </Zoom>
           </div>
 
 
           <div className={webCategoryStyles.webCategory_bottom}>
+          <Zoom>
             <div className={webCategoryStyles.webCategory_box} style={{background:'#0099DA'}}>
               <div className={webCategoryStyles.webCategory_image}>
                 <img
@@ -69,6 +77,8 @@ export function WebCategory() {
                 <p>INTEGRATION</p>
               </div>
             </div>
+            </Zoom>
+            <Zoom>
             <div className={webCategoryStyles.webCategory_box}  style={{background:'#0D4388'}}>
               <div className={webCategoryStyles.webCategory_image}>
                 <img
@@ -81,6 +91,8 @@ export function WebCategory() {
                 <p>APPLICATIONS</p>
               </div>
             </div>
+            </Zoom>
+            <Zoom>
             <div className={webCategoryStyles.webCategory_box} style={{background:'#0099DA'}}>
               <div className={webCategoryStyles.webCategory_image}>
                 <img
@@ -93,6 +105,8 @@ export function WebCategory() {
                 <p>MANAGEMENT SYSTEM</p>
               </div>
             </div>
+            </Zoom>
+            <Zoom>
             <div className={webCategoryStyles.webCategory_box} style={{background:'#0D4388'}}>
               <div className={webCategoryStyles.webCategory_image}>
                 <img
@@ -105,9 +119,11 @@ export function WebCategory() {
                 <p>SOLUTIONS</p>
               </div>
             </div>
+            </Zoom>
           </div>
         </div>
       </div>
     </div>
+  
   );
 }

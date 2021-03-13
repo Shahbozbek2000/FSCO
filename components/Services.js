@@ -71,7 +71,9 @@ export default function Services() {
           
           <TabPanel value={value} index={0} className={servicesStyles.tab_panel}>
             <div className="row  d-sm-flex flex-sm-column-rewerse">
+            <Fade left cascade>
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
+              
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
                     <h2>Web development</h2>
@@ -86,7 +88,9 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
+                
               </div>
+              </Fade>
               <div className="col-lg-4 col-sm-12 col-xs-12 col-md-6 col-12">
                 <Tabs
                   orientation="vertical"
@@ -112,9 +116,12 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel value={value} index={1} className={servicesStyles.tab_panel}>
             <div className="row  d-sm-flex flex-sm-column-rewerse">
+            <Fade left cascade>
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
+              
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
                     <h2>Mobile app development</h2>
@@ -129,7 +136,9 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
+               
               </div>
+              </Fade>
               <div className="col-lg-4 col-sm-12 col-xs-12 col-md-6 col-12">
                 <Tabs
                   orientation="vertical"
@@ -150,9 +159,12 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel value={value} index={2} className={servicesStyles.tab_panel}>
             <div className="row  d-sm-flex flex-sm-column-rewerse">
+            <Fade left cascade>
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
+              
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
                     <h2>Dedicated development team</h2>
@@ -168,7 +180,9 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
+                
               </div>
+              </Fade>
               <div className="col-lg-4 col-sm-12 col-xs-12 col-md-6 col-12">
                 <Tabs
                   orientation="vertical"
@@ -192,9 +206,12 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel value={value} index={3} className={servicesStyles.tab_panel}>
             <div className="row  d-sm-flex flex-sm-column-rewerse">
+            <Fade left cascade>
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
+             
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
                     <h2>UX/UI Design</h2>
@@ -209,7 +226,9 @@ export default function Services() {
                     </p>
                   </div>
                 </div>
+             
               </div>
+              </Fade>
               <div className="col-lg-4 col-sm-12 col-xs-12 col-md-6 col-12">
                 <Tabs
                   orientation="vertical"
@@ -235,25 +254,28 @@ export default function Services() {
               </div>
             </div>
           </TabPanel>
+
           <TabPanel value={value} index={4} className={servicesStyles.tab_panel}>
             <div className="row d-sm-flex flex-sm-column-rewerse">
-           
+            <Fade left cascade>
               <div className="col-lg-8 col-sm-12 col-md-6 col-12">
+            
                 <div className={servicesStyles.card}>
                   <div className={servicesStyles.card_header}>
                     <h2>Software testing & QA </h2>
                   </div>
                   <div className={servicesStyles.card_body}>
                     <p>
-                      Our web and mobile app development company also provides
-                      UX & UI design service as part of the custom application
-                      development process. Key criteria of our successful desi
-                      gns are: ease of use, conversion rate improvement, and
-                      willingness to use your application over competitors.
+                    Our performance testing service helps you address issues with 
+                    peak performance, responsiveness, security and stability, long before
+                     your end users ever see your product. So, you’ll be certain you’re delivering 
+                     an experience worthy of your audience, with less risk of brand-damaging lag or downtime.
                     </p>
                   </div>
                 </div>
+               
               </div>
+              </Fade>
               <div className="col-lg-4 col-sm-12 col-xs-12 col-md-6 col-12">
                 <Tabs
                   orientation="vertical"

@@ -6,12 +6,15 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box'
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 
 export  function TabContent() {
     return (
         <div className={tabContentStyles.tabContent_wrapper}>
             <div className='container-fluid'>
+            <Fade left cascade>
               <div className={tabContentStyles.tab_info}>
                  <h1 className='text-center'>What We Do</h1>
                  <p>
@@ -22,6 +25,7 @@ export  function TabContent() {
                    support development.
                  </p>
               </div>
+              </Fade>
               <ScrollableTabsButtonForce/>
             </div>
         </div>
@@ -79,7 +83,9 @@ function TabPanel(props) {
   
     return (
       <div className={classes.root}>
+      <Zoom>
         <AppBar position="static" color="default" className={tabContentStyles.appbar}>
+
           <Tabs
             value={value}
             onChange={handleChange}
@@ -99,6 +105,8 @@ function TabPanel(props) {
             
           </Tabs>
         </AppBar>
+        </Zoom>
+      <Zoom>
         <TabPanel value={value} index={0} className={tabContentStyles.tab_description}>
           <p>We'll expertly research your concept, helping you scope the project 
           and identify any technological restraints and risks that could impact its
@@ -116,7 +124,7 @@ function TabPanel(props) {
         <p>We’ll help you test real user interaction, so you can refine your product functionality
          for the best consumer response. Once you’re assured of success, a </p>
         </TabPanel>
-        
+        </Zoom>
       </div>
     );
   }

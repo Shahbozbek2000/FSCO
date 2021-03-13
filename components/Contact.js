@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
 import TextTruncate from "react-text-truncate";
 import { makeStyles } from "@material-ui/core/styles";
-import ReactCardCarousel from "react-card-carousel";
+import ReactCardCarousel from "react-card-carousel"
+import Fade from 'react-reveal/Fade'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -80,6 +81,7 @@ constructor(props){
       <div className={contactStyles.contact_wrapper}>
         <div className="container">
           <div className="row">
+          <Fade left cascade>
             <div className="col-lg-8 col-md-6 col-sm-12  col-12">
               <div className={contactStyles.form_wrapper}>
                 <form onSubmit={this.handleSubmit}>
@@ -176,13 +178,15 @@ constructor(props){
                 </form>
               </div>
             </div>
-            
+            </Fade>
+            <Fade right cascade>
             <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
             <div className={contactStyles.right_image}>
              <img src='https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
              alt='contact-img' className='img-fluid' />
              </div>
             </div>
+            </Fade>
             
           </div>
         </div>

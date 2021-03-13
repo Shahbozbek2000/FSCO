@@ -1,8 +1,8 @@
 import React, { useState, Component } from "react";
 import { Fade as Hamburger } from "hamburger-react";
 import Link from "next/link"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import SearchIcon from '@material-ui/icons/Search'
+import navStyles from '../styles/Navbar.module.css'
 
 
 export const Navbar = () => {
@@ -14,14 +14,14 @@ export const Navbar = () => {
 
  
   return (
-    <div className="header">
+    <div className='header'>
       <div className="logo-nav">
         <div className="logo-container">
           <Link href="/">
             <a>
-              
-              <img src='/images/logo.png' alt='logo'
-              style={{width:'120px', zIndex:'1001'}}  />
+            <img src='/images/logo.png' alt='logo'
+            style={{width:'120px', position:'absolute',   zIndex:'1001'}} className={navStyles.img_1}  />
+            <img src='/images/logo.svg' className={navStyles.img_2} style={{width:'120px', zIndex:'1002'}}  />
             </a>
           </Link>
         </div>
@@ -72,13 +72,13 @@ export const Navbar = () => {
             </button>
           </Link>
         </li>
-        <li style={{listStyle:'none'}} className='display'>
-          <FontAwesomeIcon icon={faSearch} className='font-search' style={{fontSize:'25px',
-          position:'absolute', width: '25px', fontWeight:'lighter', color:'#fff',
-          top:'28px', right:'14%', cursor:'pointer'}} />
-        </li>
+        
+      
         
       </div>
+      <SearchIcon className='font_search'
+      style={{color:'#fff', cursor:'pointer',  fontSize: '35px', position:'absolute', right: '14%'}} />
+ 
       <div className="mobile-menu" onClick={handleClick}>
         <div className="menu-icon">
           <Hamburger easing="ease-in" style={{ display: "none" }} />
@@ -101,9 +101,7 @@ export const Navbar = () => {
             position: absolute;
             z-index: 1000 !important;
           }
-          .logo-2{
-            
-          }
+         
           .header:hover {
            z-index: 1000 !important;
             background: #fff !important; }
@@ -113,11 +111,15 @@ export const Navbar = () => {
           .header:hover .contact-btn{
             color: #fff;
             background: #000; }
-         
-          .header:hover .font-search{
-            color: #000 !important;
-            background:#000 !important;
+          .header:hover .img_1{
+            position: absolute;
+            z-index: 1002;
           }
+          .header:hover .img_2{
+            position:absolute;
+            z-index:1003;
+          }
+            
           .logo-nav {
             display: flex;
             align-items: center;
@@ -138,10 +140,7 @@ export const Navbar = () => {
           .mobile-option {
             display: none;
           }
-          .font-search{
-            display:block;
-            color: #fff;
-          }
+          
           .contact-btn {
             border: none;
             outline: none;
@@ -284,7 +283,17 @@ export const Navbar = () => {
               display: none !important;
             }
           }
-
+          @media only screen and (max-width: 310px){
+            .contact-btn{
+              padding-right: 40px;
+            }
+          }
+          @media only screen and (max-width: 1024px){
+            .contact-btn{
+              padding: 5px 15px;
+              font-size:12px;
+            }
+          }
           
           
         `}
@@ -343,6 +352,7 @@ class Submenu extends Component {
             .nav__submenu_item a:hover{
             color: #00D747;
             }
+          
             `
           }
         </style>
