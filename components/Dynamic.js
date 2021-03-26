@@ -5,7 +5,9 @@ import Fade from 'react-reveal/Fade'
 export function Dynamic() {
   return (
     <div className={dynamicStyles.content_wrapper}>
+    
     <Fade left cascade>
+    <div className={dynamicStyles.wrap}></div>
       <div className={dynamicStyles.content_wrapper_Left}>
         <div className={dynamicStyles.content_wrapper_image}>
           <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="marketing" />

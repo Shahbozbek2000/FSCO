@@ -10,7 +10,7 @@ export  function CompanyInfo() {
                <div className={companyInfoStyles.company_title}>
                   <h2 style={{display:'block'}} className={companyInfoStyles.company_h2}>OUR COMMITMENT & <span style={{color:'#EF323A'}}>GUARANTEE</span> </h2>
                   <hr/>
-                  <p>Xicom delivers robust, scalable and high performance software, 
+                  <p>FSCO delivers robust, scalable and high performance software, 
                   web and mobile app development services to help you harness the power
                    of technology, consulting and maximize your online business investment.
                   </p>
@@ -27,7 +27,7 @@ export  function CompanyInfo() {
                        <h5>100% transparency</h5>
                     </div>
                     <div className={companyInfoStyles.panel_info}>
-                      <p> At Xicom, we believe in complete transparency with our 
+                      <p> At FSCO, we believe in complete transparency with our 
                       clients and we keep them fully updated during the entire development
                        production cycle. </p>
                     </div>
@@ -75,7 +75,7 @@ export  function CompanyInfo() {
                        <h5>flexible engagements</h5>
                     </div>
                     <div className={companyInfoStyles.panel_info}>
-                      <p>  Xicom offers tailor-made engagement models, hand crafted to meet
+                      <p>  FSCO offers tailor-made engagement models, hand crafted to meet
                        the exact requirements of clients with diverse business needs.  </p>
                     </div>
                   </div>

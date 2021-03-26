@@ -8,7 +8,7 @@ const courses = [
       "https://www.xicom.biz/images/icons/services/web-development/web-design-development.png",
     name: "web design & development",
     info:
-      " Xicom offers end-to-end website design, web application development and portal development services for your business. ",
+      " FSCO offers end-to-end website design, web application development and portal development services for your business. ",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const courses = [
       "https://www.xicom.biz/images/icons/services/web-development/ecommerce-solutions.png",
     name: "ecommerce solutions",
     info:
-      " Xicom build scalable and secure ebusiness and ecommerce solutions for customers across various business verticals. ",
+      " FSCO build scalable and secure ebusiness and ecommerce solutions for customers across various business verticals. ",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const courses = [
       "https://www.xicom.biz/images/icons/services/web-development/php-development.png",
     name: "php development",
     info:
-      "Xicom offers PHP development services that enhances the business demands of our customers across all verticals. ",
+      "FSCO offers PHP development services that enhances the business demands of our customers across all verticals. ",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const courses = [
       "https://www.xicom.biz/images/icons/services/web-development/asp.net-development.png",
     name: "asp.net development",
     info:
-      " Xicom provides cost effective and high performance ASP.NET development services for growing businesses and startups.",
+      " FSCO provides cost effective and high performance ASP.NET development services for growing businesses and startups.",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ export function Courses() {
             <Fade left cascade>
               <div className={coursesStyles.courses_wrapper_title}>
                 <h4>
-                  XICOM IS ONE OF THE TOP WEB DEVELOPMENT COMPANY WITH OVER{" "}
+                  FSCO IS ONE OF THE TOP WEB DEVELOPMENT COMPANY WITH OVER{" "}
                   <span style={{ color: "#EF323A" }}>50,000</span> MAN YEARS OF
                   EXPERIENCE.
                 </h4>
@@ -70,22 +70,22 @@ export function Courses() {
             <Fade left cascade>
               <div className={coursesStyles.courses_wrapper_info}>
                 <p>
-                  Xicom is a ISO 9001 certified web development company, backed
+                  Fsco is a ISO 9001 certified web development company, backed
                   by a strong workforce of 300+ experts providing
                   high-performance, custom web development services of any
-                  complexity with incredible competence. Xicom is a leading
+                  complexity with incredible competence. Fsco is a leading
                   offshore web development company that have been delivering
                   result-oriented web solutions to SME's across the globe for
                   more than 15+ years. We are committed towards adhering to
                   latest technology trends and successfully implementing
                   end-to-end web solutions that enhances the brand value of your
-                  your business. The development cycle at Xicom enables us to
+                  your business. The development cycle at Fsco enables us to
                   take the scalability and reliability of our web solutions to
                   next level so, you can focus on your core business processes.
                   The robust web applications developed by our web developers
                   enhances your online prominence through effective and
                   interactive customer-engagement. Hire web developers from
-                  Xicom to get professionally tailored web applications and
+                  Fsco to get professionally tailored web applications and
                   solutions.
                 </p>
               </div>
@@ -94,7 +94,7 @@ export function Courses() {
               <div className={coursesStyles.courses_btn}>
                 <button type="button">
                   <img
-                    src="https://www.flaticon.com/svg/vstatic/svg/808/808569.svg?token=exp=1615543296~hmac=817aeecbb416b64962175f942efe51db"
+                    src="https://www.flaticon.com/svg/vstatic/svg/390/390933.svg?token=exp=1615793342~hmac=6d44179049902ec90005583f64bd59a0"
                     alt="circle"
                   />
                   get free estimation
@@ -104,8 +104,8 @@ export function Courses() {
           </div>
           <div className={coursesStyles.courses_wrapper_right}>
             {courses.map((course, index) => (
-              <Fade right cascade>
-              <div className={coursesStyles.courses_list} key={index}>
+              <Fade right cascade  key={index}>
+              <div className={coursesStyles.courses_list}>
               
                 <div className={coursesStyles.courses_image}>
                   <img src={course.image} alt={course.name} />

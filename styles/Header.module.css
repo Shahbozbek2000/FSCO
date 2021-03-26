@@ -4,7 +4,7 @@
     margin-top: -80px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 30s ease infinite;
+    animation: gradient 10s ease infinite;
 }
 @keyframes gradient {
     0% {
@@ -34,12 +34,13 @@
 .web_development_title h1{
     font-size: 65px;
     font-weight: 700;
-    color: #032e68; }
+    color: #fff; }
 .web_development_right{
+    padding-left: 30px;
     padding-top: 60px; }
 .web_development_title p{
     font-size: 18px;
-    /* color: #758495; */
+    font-weight: lighter;
     color: #fff;
     width: 75%;
     line-height: 2;

@@ -56,8 +56,8 @@ export function Process() {
         </p>
         <div className="row">
           {processes.map((process, index) => (
-            <Zoom>
-            <div className="col-lg-3 col-sm-6 col-md-4 col-12" key={index}>
+            <Zoom key={index}>
+            <div className="col-lg-3 col-sm-6 col-md-4 col-12">
               <div className={processStyles.process_content}>
                 <div className={processStyles.process_image}>
                   <img src={process.image} alt={process.name} />

@@ -16,7 +16,7 @@ export  function Header() {
                 <Typical
                 loop={Infinity}
                 wrapper="b"
-                steps={["WEBSITE DEVELOPMENT", 3000]}
+                steps={["WEBSITE DEVELOPMENT", 2000]}
                
               />
                 </h1>
@@ -24,7 +24,7 @@ export  function Header() {
                    <Typical
                    loop={Infinity}
                    wrapper="b"
-                   steps={["Xicom offers robust and scalable web application development services across various platforms and industry verticals. We provide complete end-to-end website development services for mission-critical web applications demanding superior performance", 3000]}
+                   steps={["FSCO offers robust and scalable web application development services across various platforms and industry verticals. We provide complete end-to-end website development services for mission-critical web applications demanding superior performance", 2000]}
                  />
                  </p>
                 </div>

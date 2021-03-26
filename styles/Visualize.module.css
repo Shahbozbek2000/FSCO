@@ -1,0 +1,96 @@
+.visualize_wrapper{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;}
+.visualize_content{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+.visualize_content_left, .visualize_content_right{
+    width: 50%; }
+.visualize_content_left img{
+    width: 100%; }
+.visualize_content_right_title h3{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #00c752; }
+.visualize_content_right_title p{
+    color: #08283e;
+    font-size: 20px;
+    line-height: 1.3em; }
+.visualize_content_right_p{
+    font-size: 14px; }
+.visualize_content_right_body p{
+    color: #08283e; }
+.visualize_content_right_btn button{
+    display: inline-block;
+    border: none;
+    outline: none;
+    border: 2px solid #00C752;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 30px;
+    transition: all .5s;
+    border-width: 2px;
+    margin-top: 10px;
+    color: #00C752 }
+.visualize_content_right_btn button:hover{
+    background: #00C752;
+    color: #fff; }
+@media only screen and (max-width: 768px) {
+    .visualize_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; } 
+    .visualize_content_left, .visualize_content_right{
+        width: 100%;
+    }
+}
+/* @media only screen and (max-width: 576px) {
+    .UxuiSection_title h3{
+        font-size: 25px;
+    }
+    .UxuiSection_title p{
+        font-size: 16px;
+    }
+    .UxuiSection_info p{
+        width: 95%;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 14px;
+    }
+    .UxuiSection_p1{
+        font-size: 14px;
+    }
+    .UxuiSection_btn button{
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+   
+} */
+
+@media only screen and (max-width: 576px) {
+    .visualize_content_right_title h3{
+        font-size: 25px;
+        margin-top: 20px;
+    } 
+    .visualize_content_right_title p{
+        font-size: 14px;
+    }
+    .visualize_content_right_body p{
+        text-align: justify;
+        text-justify: inter-word;
+        width: 95%;
+        font-size: 14px;
+    }
+    .visualize_content_right_btn button{
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    
+
+}

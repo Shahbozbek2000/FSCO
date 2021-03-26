@@ -23,16 +23,15 @@
     object-fit: cover; }
 .ourService_bottom .button{
     background: #FFFFFF;
-    border: 2px solid #FB3939;
+    border: 2px solid #00D747;
     outline: none;
     padding: 7px 15px;
     transition: all .5s;
     font-size: 16px;
-    color: #FB3939; }
+    color: #00D747; }
 .ourService_bottom .button:hover{
     color: #fff;
-    background-color: #00D747;
-    border: none; }
+    background-color: #00D747; }
 
 @media screen and (max-width: 576px) {
     .ourService_name{

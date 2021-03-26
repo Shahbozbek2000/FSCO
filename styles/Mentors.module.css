@@ -6,10 +6,10 @@
   }
   .card {
     padding: 30px;
-    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     min-height: 310px;
+    transition: all .4s ease-in-out;
     cursor: pointer; }
 .card_top{
     font-weight: bold;
@@ -19,8 +19,7 @@
     padding-bottom: 60px;
 }
   .card:hover {
-    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.08);
-  }
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, .2);  }
   .card_title {
     margin-top: 20px;
   }
@@ -47,7 +46,11 @@
     border-radius: 25px;
   }
   
- 
+ @media only screen and (max-width: 576px) {
+   .card{
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, .2);
+   }
+ }
  
   
   @media (min-width: 1200px) {

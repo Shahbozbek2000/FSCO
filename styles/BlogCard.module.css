@@ -1,0 +1,19 @@
+.blogCard_wrapper{
+    font-family: 'Poppins', sans-serif; }
+.blogCard_wrapper .card{
+    padding: 20px;
+    transition: all .5s; }
+
+.blogCard_wrapper .card:hover{
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, .2); }
+.card_image img{
+    width: 100%; }
+.blogCard_wrapper .card_body h5{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px; }
+.blogCard_wrapper .card_footer p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word; }

@@ -5,15 +5,13 @@ import SearchIcon from '@material-ui/icons/Search'
 import navStyles from '../styles/Navbar.module.css'
 
 
+
 export const Navbar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
- 
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
 
-  const closeMobileMenu = () => setClick(false);
-
- 
-  return (
+return (
     <div className='header'>
       <div className="logo-nav">
         <div className="logo-container">
@@ -54,34 +52,33 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <Link href="/">
-              <a href="/" className="nav-link">
+            <Link href="/blog">
+              <a  className="nav-link">
                 Blog
               </a>
             </Link>
           </li>
-        </ul>
-        <li
+          <li
           className="option"
           onClick={closeMobileMenu}
           style={{ listStyle: "none" }}
         >
           <Link href="/">
-            <button className="contact-btn" type="button">
+            <button className="contact-btn" type="button" style={{marginTop:'10px'}}>
               Contact Us
             </button>
           </Link>
         </li>
-        
-      
+        </ul>
         
       </div>
       <SearchIcon className='font_search'
-      style={{color:'#fff', cursor:'pointer',  fontSize: '35px', position:'absolute', right: '14%'}} />
+      style={{cursor:'pointer', color: '#fff', fontSize: '35px', position:'absolute', right: '14%'}} />
  
       <div className="mobile-menu" onClick={handleClick}>
         <div className="menu-icon">
           <Hamburger easing="ease-in" style={{ display: "none" }} />
+          
         </div>
       </div>
       <style jsx>
@@ -111,36 +108,38 @@ export const Navbar = () => {
           .header:hover .contact-btn{
             color: #fff;
             background: #000; }
-          .header:hover .img_1{
+          .font_search{
+            font-size: 200px;
+            color: #fff !important;
+          }
+          .header:hover .font_search{
             position: absolute;
-            z-index: 1002;
-          }
+            z-index: 1001;
+            color: #000 !important; }
+          .header:hover .img_1{
+            display:none !important;
+            opacity: 0 !important; }
           .header:hover .img_2{
-            position:absolute;
-            z-index:1003;
+            position: absolute;
+            z-index: 1005;
           }
-            
+          
           .logo-nav {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            z-index: 5;
-          }
+            z-index: 5; }
 
           .logo {
             width: 45px;
-            height: 45px;
-          }
+            height: 45px; }
           .nav-options {
             display: grid;
             grid-template-columns: repeat(6, auto);
             grid-gap: 30px;
-            list-style-type: none;
-          }
+            list-style-type: none; }
           .mobile-option {
-            display: none;
-          }
-          
+            display: none; }
           .contact-btn {
             border: none;
             outline: none;
@@ -162,33 +161,31 @@ export const Navbar = () => {
             color: white;
           }
           
-          .signup-btn {
-            padding: 10px 10px;
-            height: 2.4rem;
-            border-radius: 3px;
-            background: rgb(222, 9, 241);
-            color: white;
-            cursor: pointer;
-            align-items: center;
-          }
           .mobile-menu {
-            display: none !important;
-          }
+            display: none !important; }
           .header .nav-link {
+           padding-top: 22px;
             text-decoration: none !important;
             color: #fff;
             transition: all 0.5s ease-in-out;
-            padding-top: 22px;
-            font-size: 14px !important;
-          }
+            font-size: 14px !important; }
+          .header .nav-link::after{
+            content: '';
+            display: block;
+            margin-top: -51px;
+            width: 0;
+            height: 3px;
+            background: #00d747;
+            transition: width .3s; }
           .header .nav-link:hover {
             font-weight: bold;
-            color: #00d747 !important;
-            border-top: 3px solid #00d747;
-          }
-          .nav-link:hover .nav__submenu{
-            display:block !important;
-          }
+            color: #00d747 !important; }
+          .header .nav-link:hover::after{
+            width: 100%; }
+        .header .nav-link::active{
+          color: #00d747; }
+        .nav-link:hover .nav__submenu{
+            display:block !important; }
           @media screen and (max-width: 992px) {
             .header {
               padding: 0px 10px;
@@ -204,6 +201,9 @@ export const Navbar = () => {
             .display{
               display:none !important;
             }
+            .header .nav-link::after{
+              display:none;
+            }
             .nav-options {
               display: flex;
               width: 100%;
@@ -215,46 +215,44 @@ export const Navbar = () => {
               transition: all 0.5s ease;
               flex-direction: column;
               list-style-type: none;
-              grid-gap: 0px;
+              line-height: 3;
+              grid-gap: 10px;
             }
 
             .nav-link {
-              color: black !important;
-            }
+              padding-top:0px;
+              color: black !important; }
 
             .nav-options.active {
               background: #fff;
               left: 0;
               opacity: 1;
               color: #000 !important;
-              height: 55vh;
+              height: 85vh;
               transition: all 0.5s ease;
               z-index: 10 !important;
               padding-left: 0px;
             }
             .contact-btn {
               margin-left: 0;
+              margin-top:20px;
               background-color: #000;
-              color: #fff;
-            }
+              color: #fff; }
             .menu-icon {
               width: 50px;
-              height: 50px;
-            }
+              height: 50px;  }
             .option {
               display: flex;
               align-items: center;
               justify-content: center;
-              height: auto !important;
-            }
-          
-            .mobile-menu {
+              height: auto !important;  }
+           .mobile-menu {
               display: block !important;
               z-index: 1000;
-              color:#000;
-            }
-            .font-search{
+              color:#000; }
+            .font_search{
               display:none !important;
+              color: #fff;
             }
           }
           .mobile-menu {
@@ -269,25 +267,25 @@ export const Navbar = () => {
             }
            
             .contact-btn {
-              padding: 5px 15px;
+              padding: 5px 17px;
               font-size: 12px;
               background: #000;
               color: #fff;
-              margin-left: 50px;
-            }
+              margin-left:20px; }
             .nav-link {
               color: #000 !important;
               font-weight: bold;
             }
-            .font-search{
+            .font_search{
               display: none !important;
             }
           }
-          @media only screen and (max-width: 310px){
-            .contact-btn{
-              padding-right: 40px;
-            }
-          }
+         @media only screen and (max-width: 340px) {
+           .contact-btn{
+             padding: 5px 10px;
+             margin-right: 20px;
+           }
+         }
           @media only screen and (max-width: 1024px){
             .contact-btn{
               padding: 5px 15px;
@@ -311,13 +309,13 @@ class Submenu extends Component {
           <a>Mobile development</a>
         </Link>
         </li>
-        <li className="nav__submenu_item ">
+        <li className="nav__submenu_item">
         <Link href='/services/web_development'>
           <a>Web Development</a>
         </Link>
         </li>
         <li className="nav__submenu_item ">
-        <Link href='/services/ux-ui-design'>
+        <Link href='/services/ux_ui_design'>
           <a>UX/UI design</a>
         </Link>
         </li>
@@ -329,9 +327,8 @@ class Submenu extends Component {
               opacity: 0;
               top: 80px;
               padding: 10px;
-              display:block;
               background:#fff;
-              transition: all .5s;
+              transition: all .8s;
               border-bottom-left-radius: 5px;
               border-bottom-right-radius: 5px; }
             .nav__submenu:hover{
@@ -351,6 +348,14 @@ class Submenu extends Component {
             }
             .nav__submenu_item a:hover{
             color: #00D747;
+            }
+
+            @media only screen and (max-width: 768px){
+              .nav__submenu{
+                background: transparent !important;
+                border: none !important;
+                display:none !important;
+              }
             }
           
             `

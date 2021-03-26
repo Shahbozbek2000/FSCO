@@ -1,20 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import videoStyles from "../styles/Video.module.css";
 import Typical from "react-typical";
 
-const images = [
-  { id: 1, image: "/images/T24.png", title: "T24" },
-  { id: 2, image: "/images/TTELD.png", title: "TTELD" },
-  { id: 3, image: "/images/TTfreigt.png", title: "TTfreight" },
-  { id: 4, image: "/images/ORDERTRUCK.png", title: "ORDERTRUCK" },
-];
-
-export const BackgroundVideo = () => {
+export class BackgroundVideo extends Component {
+  constructor(props){
+    super(props) 
+    this.state = {
+      videoURL: '/video/Drink-Wine.mp4'
+    }
+  }
+  render() {
+  
+    const {videoURL} = this.state
+  
   return (
     <div>
       <div className={videoStyles.wrap}></div>
       <div className={videoStyles.video_wrapper}>
         <div className={videoStyles.video_wrapper_Image}>
+        <video className={videoStyles.video_panel} autoPlay loop muted>
+           <source src={videoURL} type='video/mp4' />
+        </video>
           <div className={videoStyles.video_wrapper_title}>
             <h1>
               <Typical
@@ -36,4 +42,5 @@ export const BackgroundVideo = () => {
       </div>
     </div>
   );
+}
 };
